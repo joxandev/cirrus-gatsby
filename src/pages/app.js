@@ -6,12 +6,10 @@ import ProtectedRoute from "../components/protectedRoute"
 import Profile from "../components/profile"
 import Login from "../components/login"
 
-import * as Auth from "../_services/auth.service"
-
 const App = () => {
   return (
     <Layout>
-      <h1 className="is-size-3">Cirrus Dashboad: {Auth.isAuth().toString()}</h1>
+      <h1 className="is-size-3">Cirrus Dashboad</h1>
       <Link to="/app/profile">Profile</Link> |{" "}
       <Link to="/app/login">Login</Link>
       <Router>
